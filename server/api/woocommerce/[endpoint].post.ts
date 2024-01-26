@@ -6,8 +6,8 @@ export default defineEventHandler(async (event) => {
 
     const api = new WooCommerceRestApi({
         url: "https://www.jiesdesign.com",
-        consumerKey: "ck_691c0e09421a503945c11afb05d0237346b769ab",
-        consumerSecret: "cs_8bf971733a78ac1d0eac76131b9c2baea4cb644d",
+        consumerKey: process.env.WOOCOMMERCE_CONSUMER_KEY,
+        consumerSecret: process.env.WOOCOMMERCE_CONSUMER_SECRET,
         version: "wc/v3",
     });
 
